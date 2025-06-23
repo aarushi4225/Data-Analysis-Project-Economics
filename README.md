@@ -13,6 +13,13 @@ The goal of this project is to:
 - Evaluate the performance of the model using metrics like Mean Squared Error (MSE) and R-squared.
 - Visualize the actual vs. predicted GDP values.
 
+  
+## DEMO
+
+**Economic Trend Analysis** 
+An HTML based implementation to demonstrate the calculated equation has been provided in the repository. The code can be run on the local machine to calculate the missing economic variable (GDP, Consumption, Government Spending, Investment, or Net Exports) when the other four are known. (Solely for illustration, this HTML code is generated using online tools).
+
+
 ## Libraries Used
 
 - **Pandas:** For data manipulation and analysis.
@@ -26,8 +33,7 @@ The goal of this project is to:
 - **Statsmodels:** For more detailed statistical analysis of the linear regression model.
 - **NumPy:** For numerical operations (implicitly used by Pandas).
 
+
 ## Data Source
 
-The code assumes that the GDP data and related economic parameters are stored in an Excel file (`DOC-20250324-WA0010..xlsx`). The file should contain columns for GDP and the chosen economic parameters (C, G, I, NX).
-
-**Note:** The specific file path in the code (`/content/DOC-20250324-WA0010..xlsx`) might need to be adjusted based on the location of your data file.
+The code assumes that the GDP data and related economic parameters are stored in an Excel file (`DOC-20250324-WA0010..xlsx`). The file contained columns for GDP and the chosen economic parameters (C, G, I, NX).
