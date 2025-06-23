@@ -145,19 +145,19 @@
                 break;
             case 'C':
                 calculatedValue = (values.GDP - K - (0.19539 * values.G) - (0.00364 * values.I) - (0.50362 * values.NX)) / 9.47233;
-                outputMessage = `Calculated Consumption (C): ${calculatedValue.toFixed(2)}`;
+                outputMessage = `Expected Consumption (C): ${calculatedValue.toFixed(2)}`;
                 break;
             case 'G':
                 calculatedValue = (values.GDP - K - (9.47233 * values.C) - (0.00364 * values.I) - (0.50362 * values.NX)) / 0.19539;
-                outputMessage = `Calculated Government Spending (G): ${calculatedValue.toFixed(2)}`;
+                outputMessage = `Expected Government Spending (G): ${calculatedValue.toFixed(2)}`;
                 break;
             case 'I':
                 calculatedValue = (values.GDP - K - (9.47233 * values.C) - (0.19539 * values.G) - (0.50362 * values.NX)) / 0.00364;
-                outputMessage = `Calculated Investment (I): ${calculatedValue.toFixed(2)}`;
+                outputMessage = `Expected Investment (I): ${calculatedValue.toFixed(2)}`;
                 break;
             case 'NX':
                 calculatedValue = (values.GDP - K - (9.47233 * values.C) - (0.19539 * values.G) - (0.00364 * values.I)) / 0.50362;
-                outputMessage = `Calculated Net Exports (NX): ${calculatedValue.toFixed(2)}`;
+                outputMessage = `Expected Net Exports (NX): ${calculatedValue.toFixed(2)}`;
                 break;
             default:
                 displayError("An unexpected error occurred.");
